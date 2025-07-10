@@ -3,8 +3,8 @@ provider "aws" {
 }
 
 terraform {
-  required_version = ">= 1.0" 
-  
+  required_version = ">= 1.0"
+
   backend "s3" {
     bucket = "sctp-ce10-tfstate"
     key    = "torwei-ce10-3-2.tfstate"
